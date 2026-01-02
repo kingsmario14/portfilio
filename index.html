@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d34ca7047d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/dev2.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolios</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    </div class="header-text">
+        <p>Devops and Fullstack Engineer</p>
+        <h1>Hi, I am <span>Kingsley</span><br>Ngwoke, from Nigeria</h1>
+</div>
+<!-- --------------about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/pics.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>As a Devops and Fullstack Engineer, i specialize in building scalable
+                reliable and automated solutions that bridge development and operations. 
+            My approacch combines modern DevOps practices-like CI/CD pipelines, containerization
+            and infrastucture as code-with solid fullstack development skills using technologies
+            such as React, Node.Js, Python and cloud platforms like AWS. I design systems that not
+            only run efficiently but are also easy to maintain, monitor and scale. Whether it's deploloying
+            microservices with Docker and Kubernetes or crafting intuitive users interfaces, I'm committed
+            to delivering end-to-end solutions that drive real-World impact.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>    
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Front-End develpment</span><br>Designing and building Web/App interfaces</li>
+                    <li><span>Back-End development</span><br>Developing Web/App interfaces</li>
+                    <li><span>Devops development</span><br>Building and Orchestrating scalability in softwares.</li>
+                    </ul>    
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2020 - smart.c tech hub</span><br>Designing and building Web/App interfaces</li>
+                    <li><span>2023-2024</span><br>Kwara Tech Institute Backend role.</li>
+                    <li><span>2024-current Tech Global Technology</span><br>Internship at Tech Global Institute.</li>
+            </ul>    
+            </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015</span><br>Matrix Training Institute (MTI).</li>
+                        <li><span>2023</span><br>University of Nigeria Nsukka.</li>
+                        <li><span>2024</span><br>Tech Global Technologies.</li>
+                    </ul>    
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------- services---------------------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-duotone fa-regular fa-crop"></i>
+                <h2>Web design</h2>
+                <p>I offer services in designing web site using a well structured layers and frameworks in 
+                making a responsive website.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+             <div>
+                 <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Development and Data mangement services</h2>
+                <p>I offer services in building web site and also database management using mysql and no-sql in building scalable frameworks.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+             <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Aws Cloud management and Devops operation</h2>
+                <p>I offer services in CI/CD pipelines setups and automation, infrastucture development, cloud Deployment and management.
+                also in containers orchestration and git terminal controls.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------portfolio------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/tech.jpg">
+                <div class="layer">
+                    <h3>Web organization and interaction</h3>
+                    <p>The website connect with people across the globe.
+                    Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/tech1.jpg">
+                <div class="layer">
+                    <h3>Web App interaction and system design automation.</h3>
+                    <p>The website connect with people across the globe.
+                    Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div classs="work">
+                <img src="image/mobile.jpg">
+                <div class="layer">
+                    <h3>connect on social media</h3>
+                    <p>services are available on social media and github repositories.
+                    you can book my services online.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+ <!-- -------------------------contact-------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Contact me at kingsmarioa1@gmail.com</p>
+                <p><i class="fa-duotone fa-solid fa-phone"></i>+2348161705399</p>
+                <div class="social-icons">
+                    <a href="https://facebbok.com/"><i class="fab fa-facebbok"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+        </div class="contact-right">
+            <form action="index.php" method="post">
+                <input type="name" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="password" name="password" placeholder="Your Password" required>
+                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+    </div>
+    </div>
+  </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+}
+</script> 
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
